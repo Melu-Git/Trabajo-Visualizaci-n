@@ -1,0 +1,143 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+
+  #cuerpo-home{
+    display: flex;
+  }
+
+  #container-perfil{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#avatar-selector {
+    background-image: url(imagenes/fondo.png);
+    text-align: center;
+    height: 100%;
+  }
+  
+  .avatars {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+
+.avatars img {
+    width: 100%;
+    height: 100%;
+    margin-right: 15px; /* Agregar margen derecho de 10px entre las imágenes */
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+    box-sizing: border-box; 
+}
+
+
+  .avatars img:hover {
+    border: 2px solid #0078d4; 
+  }
+  
+  .avatar-selected {
+    text-align: center;
+  }
+  
+  /* Estilo del avatar seleccionado */
+  .avatar-selected img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    border-radius: 10px;
+  }
+
+
+  .tittle-personaje{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #f0f0f0;
+  }
+  .nombre-personaje {
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .nombre-personaje p {
+    margin-right: 10px; 
+    color: white; 
+    margin-left: 27px;
+  }
+  
+  .nombre-personaje input {
+    width: 200px; 
+    padding: 5px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+  .button-personaje{
+    margin-top: 20px;
+    background-color: #30586C;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: white;
+  }
+  .button-personaje:hover{
+    background-color: #65B29A;
+  }
+
+  .carousel-container{
+    display: flex;
+    margin-right: 5px;
+  }
+  .carousel-container button {
+    border-radius: 50%;
+    height: 50%;
+    margin-top: 55px;
+  }
+
+  #nextBtn{
+    margin-right: 15px;
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+    background-color: #30586C;
+  }
+  #prevBtn{
+    margin-left: 15px;
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+    background-color: #30586C;
+   
+  }
+
+  #container-menu {
+    position: absolute; 
+    top: 0; 
+    right: 0; /* Posiciona el div a la derecha de la página */
+    width: 200px; /* Establece el ancho del div  */
+    background-color: #30586C; 
+    height: 100%;
+  }
+  #container-menu h2{
+    text-align: center;
+    color: #f0f0f0;
+  }
+
+  .contenido{
+    width: 700px;
+  }
+  .contenido h2{
+    text-align: center;
+ 
+  }
