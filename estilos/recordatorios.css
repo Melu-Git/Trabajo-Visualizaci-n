@@ -1,0 +1,207 @@
+body {
+   
+    background-color: #1B2033;
+  }
+
+
+h2{
+  font-family: "HARRYP__.ttf";
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+
+  /* ESTILOS DE LA BARRA DE PASOS */
+  #ProgressSteps {
+    margin: 40px auto;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    /* border: 1px solid #bbb; */
+  }
+  
+  #StepsLineBg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  
+  #StepsLine {
+    position: absolute;
+    height: 3px;
+    background-color: #4caf50;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.45s ease;
+    width: 33.33;
+  }
+  
+  .steps {
+    height: 30px;
+    width:30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #bbb;
+    transition: all 0.5s ease;
+  
+  }
+  
+  .active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .controls-container {
+    margin-top: 20px;
+  }
+  #backArrow {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #bbb;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    margin-left:30px;
+ }
+ #stepInicio{
+    height: 30px;
+    width: 30px;
+    
+ }
+ 
+ #backArrow:hover {
+    background-color: #4caf50;
+    color: white;
+ }
+
+ #ProgressSteps img{
+  height: 60px;
+  padding-bottom: 8px;
+ 
+ }
+ 
+ #ProgressSteps .steps .active-img {
+  display: none;
+}
+
+#ProgressSteps .steps.active .active-img {
+  display: block;
+}
+
+#ProgressSteps .steps.active .inactive-img {
+  display: none;
+}
+  /* FIN ESTILOS DE LA BARRA DE PASOS */
+ 
+/* info  */
+
+.caja-contenedora{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 550px;
+  height: 310px;
+margin-left: -280px;
+border-radius: 10px;
+}
+.selector-container {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 10px;
+  margin-top: 25px;
+  display: block;
+  margin-right: 20px;
+  padding-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+select {
+  width: 200px; /* Establece el ancho que desees */
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.selector-container li {
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  border: 1px solid #1B2033;
+  font-family: "HARRYP__.ttf";
+}
+
+.selector-container li.selected {
+  background-color: #3B5154;
+  color: white;
+}
+
+main {
+  position: relative;
+  text-align: center;
+}
+
+.imagen-fondo {
+  width: 400px;
+  height: 500px;
+  height: auto;
+  display: block;
+}
+
+.imagen-superpuesta {
+  position: relative;
+  display: inline-block;
+}
+
+.superpuesta {
+  position: absolute;
+  top: 89%;
+  left: 115%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

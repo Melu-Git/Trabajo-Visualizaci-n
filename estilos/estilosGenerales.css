@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+}  
+
+/* Header section */
+.barra {
+    background-color: #3B5154;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .barra img {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+    border-radius: 50%;
+  }
+  
+  .barra p {
+    font-family: "HARRYP__.ttf";
+    font-size: 25px;
+    color: white;
+    margin-left: 15px;
+  }
+    /* Header section fin */
+
+    @font-face {
+      font-family: "HARRYP__.ttf";
+      src: url("HARRYP__.ttf.TTF"); /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
+    }
+    

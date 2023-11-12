@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de opciones</title>
+  <link rel="stylesheet" href="estilos/metaDiaria.css">
+  <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilosGenerales.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<!-- NO PUDE ALARGAR LA LINEA DE LOS PASOS
+VER SI DEJAMOS LA FLECHA DEL COSTADO. En teoria iria al paso de completar los datos pero no se si es innecesario o no -->
+<body>
+    <section class="barra">
+        <img src="imagenes/fondo.png" alt="">
+        <p>Booket</p>
+        </section>
+    <div id="backArrow" onclick="prevStep()">
+        <span class="material-symbols-outlined" style="color: black;">arrow_back</span>
+     </div>
+    <div id="ProgressSteps">
+        <div id="stepInicio">
+            
+         </div>
+        <div id="StepsLineBg"></div>
+        <div id="StepsLine" ></div>
+        <div class="steps active">
+                <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+                <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+        </div>
+        <div class="steps">
+            <img src="imagenes/bara magic.png" alt="">
+        </div>
+        <div class="steps">
+            <img src="imagenes/bara magic.png" alt="">
+        </div>
+        
+     </div>
+
+    <br>
+    
+    <main>
+        <h2>Selecciona una meta diaria</h2>
+      <div class="listaOpciones">
+        <ul>
+          <div class="opciones" onclick="seleccionarOpcion(this)">
+              <div class="cntenidoOpciones">
+                  <span id="titulos-opciones">Relajado</span>
+                  <div class="tiempo">
+                      <span class="material-symbols-outlined">schedule</span>
+                      <span  id="tiempo-opciones">5min al dia</span>
+                  </div>
+              </div>
+          </div>
+          <br>
+  
+          <div class="opciones" onclick="seleccionarOpcion(this)">
+              <div class="cntenidoOpciones">
+                  <span id="titulos-opciones">Normal</span>
+                  <div class="tiempo">
+                      <span class="material-symbols-outlined">schedule</span>
+                      <span  id="tiempo-opciones">10min al dia</span>
+                  </div>
+              </div>
+          </div>
+          <br>
+  
+          <div class="opciones" onclick="seleccionarOpcion(this)">
+              <div class="cntenidoOpciones">
+                  <span id="titulos-opciones">Serio</span>
+                  <div class="tiempo">
+                      <span class="material-symbols-outlined">schedule</span>
+                      <span  id="tiempo-opciones">20min al dia</span>
+                  </div>
+              </div>
+          </div>
+          <br>
+  
+          <div class="opciones" onclick="seleccionarOpcion(this)">
+              <div class="cntenidoOpciones">
+                  <span id="titulos-opciones">INTENSO</span>
+                  <div class="tiempo">
+                      <span class="material-symbols-outlined">schedule</span>
+                      <span  id="tiempo-opciones">30min al dia</span>
+                  </div>
+              </div>
+          </div>
+        </ul>
+      
+      </div>
+      <br>
+      <div class="boton">
+          <button type="button" onclick="siguientePagina()" id="boton-continuar">CONTINUAR</button>
+      </div>
+
+
+    </main>
+  <script src="Javascript/metaDiaria.js"></script>
+  <script src="Javascript/lineaDePasos.js"></script>
+</body>
+</html>
