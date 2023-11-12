@@ -1,0 +1,49 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de registro</title>
+  <link rel="stylesheet" href="estilos/formuario.css">
+  <link rel="stylesheet" href="estilos/estilosGenerales.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="barra">
+<img src="imagenes/fondo.png" alt="">
+<p>Booket</p>
+</section>
+
+    <section class="formulario-seccion">
+        <h2 id="titulo-form">CREA TU PERFIL</h2>
+<div class="dos-columnas">
+    <div class="imagen-form">
+      <img src="imagenes/muestra.png" alt="">
+    </div>
+    <div class="formulario">
+      <form action="formulario.php" method="post">
+   
+        <label for="nombre">Nombre</label> 
+        <input type="text" name="nombre" placeholder="Nombre">
+
+        <label for="apellido">Apellido</label>
+       <input type="text" name="apellido" placeholder="Apellido">
+
+       <label for="edad">Edad</label>
+       <input type="number" name="edad" placeholder="Edad">     
+       
+       <label for="correo">Email</label>
+       <input type="email" name="correo" placeholder="Correo electrónico">
+
+       <label for="contraseña">Contraseña</label>
+       <input type="password" name="contraseña" placeholder="Contraseña">
+
+       <input type="submit" value="Enviar">
+      </form>
+    </div>
+</div>
+</section>
+  <script src="Javascript/formuario.js"></script>
+</body>
+</html>

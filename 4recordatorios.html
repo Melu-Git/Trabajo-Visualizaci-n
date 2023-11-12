@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recordatorio</title>
+    <link rel="stylesheet" href="estilos/estilosGenerales.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<link rel="stylesheet" href="estilos/recordatorios.css">
+</head>
+<body>
+    <section class="barra">
+        <img src="imagenes/fondo.png" alt="">
+        <p>Booket</p>
+        </section>
+
+        <div id="backArrow" onclick="redirigirAtras('3metaDiaria.html')">
+            <span class="material-symbols-outlined" style="color: black;">arrow_back</span>
+        </div>
+
+
+        <div id="ProgressSteps">
+            <div id="stepInicio"> 
+
+             </div>
+            <div id="StepsLineBg" > </div>
+            <div id="StepsLine" > </div>
+            <div class="steps active">
+                    <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+                    <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+
+            </div>
+            
+             <div class="steps active">
+                    <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+                    <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+            </div>
+            <div class="steps">
+                <img src="imagenes/bara magic.png" alt="">
+            </div>
+            
+         </div>
+    
+        <br>
+    
+    <!-- <main>
+        <h2>Activá el recordatorio para alcanzar tu meta diaria</h2>
+        <img src="imagenes/alerta.png" alt="Imagen de fondo" class="imagen-fondo">
+        <section class="caja-contenedora">
+            <div class="contenido" id="superpuesta">
+                <div class="selector-container">
+                    <label for="opciones">Seleccion el medio:</label>
+                    <select id="opciones" name="opciones">
+                      <option value="" disabled selected hidden>Ej: email</option>
+                      <option value="opcion1">email</option>
+                      <option value="opcion2">Opción 2</option>
+                      <option value="opcion3">Opción 3</option>
+                      </select>
+                  </div>
+
+                  <div class="selector-container">
+                    <label for="opciones">Días de la semana:</label>
+                    <ul id="opciones" name="opciones" multiple>
+                      <li class="lun">L</li>
+                      <li class="mar">M</li>
+                      <li class="mie">X</li>
+                      <li class="jue">J</li>
+                      <li class="vie">V</li>
+                      <li class="sab">S</li>
+                      <li class="dom">D</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="selector-container">
+                    <label for="opciones">Horario:</label>
+                    <select id="opciones" name="opciones">
+                      <option value="" disabled selected hidden>Ej: email</option>
+                      <option value="opcion1">email</option>
+                      <option value="opcion2">Opción 2</option>
+                      <option value="opcion3">Opción 3</option>
+                      </select>
+                  </div>
+
+            </div>
+        </section>
+
+    </main> -->
+    <h2>Activá el recordatorio para alcanzar tu meta diaria</h2>
+    <main>
+        <div class="imagen-superpuesta">
+            <img src="imagenes/alerta.png" alt="Imagen de fondo" class="imagen-fondo">
+            <div class="superpuesta caja-contenedora">
+                <!-- Contenido superpuesto -->
+                <div id="contenido">
+                    <div class="selector-container">
+                        <label for="opciones">Seleccion el medio:</label>
+                        <select id="opciones" name="opciones">
+                          <option value="" disabled selected hidden>Ej: email</option>
+                          <option value="opcion1">email</option>
+                          <option value="opcion2">Opción 2</option>
+                          <option value="opcion3">Opción 3</option>
+                          </select>
+                      </div>
+    
+                      <div class="selector-container">
+                        <label for="opciones">Días de la semana:</label>
+                        <ul id="opciones" name="opciones" multiple>
+                          <li class="lun">L</li>
+                          <li class="mar">M</li>
+                          <li class="mie">X</li>
+                          <li class="jue">J</li>
+                          <li class="vie">V</li>
+                          <li class="sab">S</li>
+                          <li class="dom">D</li>
+                        </ul>
+                      </div>
+                      
+                      <div class="selector-container">
+                        <label for="opciones">Horario:</label>
+                        <select id="opciones" name="opciones">
+                          <option value="" disabled selected hidden>Ej: email</option>
+                          <option value="opcion1">email</option>
+                          <option value="opcion2">Opción 2</option>
+                          <option value="opcion3">Opción 3</option>
+                          </select>
+                      </div>
+    
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+    
+    <script src="Javascript/lineaDePasos.js"></script>
+    <script src="Javascript/recordatorios.js"></script>
+</body>
+</html>
