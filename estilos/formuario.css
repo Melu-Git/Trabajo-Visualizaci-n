@@ -12,12 +12,29 @@
     src: url("HARRYP__.ttf.TTF"); /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
   }
   
-  
+  .boton-ubi-derecha{
+    float: right;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid rgb(180, 178, 178);
+    background-color: transparent;
+    font-family: "HARRYP__.ttf";
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+  .boton-ubi-derecha:hover{
+    box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
+    background-color: #3B5154;
+  }
   /* Form section */
   .formulario-seccion {
-    height: 100%;
+
     width: 100%;
-    background-color: #1B2033;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,12 +43,13 @@
   }
   
   .formulario {
+    border: 1px solid rgb(180, 178, 178);
+    box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
     width: 380px;
-    background-color: #fff;
     padding: 20px;
+    background-color: #355c3996;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin-right: 320px;
+
   }
   
   .dos-columnas {
@@ -41,13 +59,14 @@
     align-items: center;
   }
   
-
   label {
     font-family: 'Crimson Pro', serif;
     font-size: 16px;
     font-weight: bold;
     display: block;
 margin-top: 15px;
+color: #fff;
+text-transform: uppercase;
   }
   
   input {
@@ -55,28 +74,49 @@ margin-top: 15px;
     padding: 10px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px;
+background-color: transparent;
+margin-top: 10px;
+margin-bottom: 5px;
+
   }
   
   input[type="submit"] {
-    background-color: #000;
+    background-color: #3B5154;
+    box-shadow: 1px 1px 1px solid #0a0f0f;
     color: #fff;
     cursor: pointer;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     margin-top: 15px;
-   
+    font-family: 'Crimson Pro', serif;
+    text-transform: uppercase;
+  }
+  input[type="submit"]:hover {
+    background-color: #57787c;
+    box-shadow: 2px 2px 2px solid #0a0f0f;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-family: 'Crimson Pro', serif;
+    text-transform: uppercase;
   }
   
   input[type="text"] {
     margin-top: 10px;
+    border-radius: 10px;
+
   }
   
   input[type="text"] + label {
     font-size: 16px;
     font-weight: bold;
     display: block;
-    margin-bottom: 10px;
+
   }
 
   h2 {
@@ -88,11 +128,26 @@ margin-top: 15px;
   }
   
   .imagen-form img {
-    width: 400px;
-    height: 490px;
+    width: 450px;
+    height:535px;
     float: right;
     margin-right: 50px;
-    margin-left: 320px;
+
     border-radius: 10px;
   }
 
+  input[name="correo"]::placeholder {
+    color: white;
+  }
+  input[name="contraseña"]::placeholder {
+    color: white;
+  }
+  input[name="nombre"]::placeholder {
+    color: white;
+  }
+  input[name="apellido"]::placeholder {
+    color: white;
+  }
+  input[name="edad"]::placeholder {
+    color: white;
+  }

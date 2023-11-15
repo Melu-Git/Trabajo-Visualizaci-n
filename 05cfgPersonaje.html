@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>character</title>
+    <link rel="stylesheet" href="estilos/cfgPersonaje.css">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilosGenerales.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  </head>
+<style>
+    body{
+        background-image: url(imagenes/prueba.png);
+        height: 80vh;
+    }
+
+</style>
+  <body>
+      <div id="backArrow" onclick="redirigirAtras('4recordatorios.html')">
+          <span class="material-symbols-outlined" style="color: black;">arrow_back</span>
+       </div>
+      <div id="ProgressSteps">
+          <div id="stepInicio">
+              
+           </div>
+          <div id="StepsLineBg"></div>
+          <div id="StepsLine" ></div>
+          <div class="steps active">
+                  <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+                  <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+          </div>
+          <div class="steps active">
+            <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+            <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+          </div>
+          <div class="steps active">
+            <img src="imagenes/bara magic.png" alt="" class="inactive-img">
+            <img src="imagenes/bara magica activa.png" alt="" class="active-img">
+          </div>
+          
+       </div>
+  
+      <br>
+      
+      <main>
+          <h2>¡Es hora de crear tu perfil!</h2>
+
+          <div class="contenedor-principal">
+            <div class="contenido" >
+                <img src="imagenes/Diseño sin título (2).gif" alt="">
+                <div class="informacion">
+                   
+                    <input type="text" name="nombre" placeholder="Usuario..." required>
+                    <input type="text" name="nombre" placeholder="Nivel..." required>
+                    <input type="text" name="nombre" placeholder="Experiencia..." required>
+            
+                </div>
+
+            </div>
+          </div>
+          <div id="contenedorBoton">
+
+            <button class="boton-fuera-main" onclick="validarCampos()" >CONTINUAR</button>
+        </div>
+
+  
+      </main>
+    <script src="Javascript/lineaDePasos.js"></script>
+    <script src="Javascript/cfgPersonaje.js"></script>
+  </body>
+</html>

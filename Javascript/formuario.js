@@ -48,8 +48,18 @@ function validarFormulario() {
 
   // Enviar el formulario
   return true;
+  window.location.href = "3metaDiaria.html"; 
 }
 
-// Asociar el evento onclick al botón de envío
-document.querySelector("input[type='submit']").onclick = validarFormulario;
+document.querySelector("input[type='submit']").onclick = function (event) {
+  event.preventDefault(); // Prevenir el envío predeterminado del formulario
+  if (validarFormulario()) {
+    document.querySelector("form").submit(); // Enviar el formulario si la validación es exitosa
+  }
+};
 
+const boton = document.querySelector(".boton-ubi-derecha");
+
+boton.addEventListener("click", function() {
+  window.location.href = "6Loguearse.html";
+});
