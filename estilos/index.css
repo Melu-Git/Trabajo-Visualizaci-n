@@ -20,6 +20,7 @@ body {
 }
 
 #avatar-selector {
+  background-color: #30586C;
     background-image: url(imagenes/fondo.png);
     text-align: center;
     height: 100%;
@@ -34,7 +35,6 @@ body {
     transition: transform 0.3s;
   }
   
-
 .avatars img {
     width: 100%;
     height: 100%;
@@ -125,7 +125,7 @@ body {
     position: absolute; 
     top: 0; 
     right: 0; /* Posiciona el div a la derecha de la página */
-    width: 200px; /* Establece el ancho del div  */
+    width: 15%; /* Establece el ancho del div  */
     background-color: #30586C; 
     height: 100%;
   }
@@ -135,9 +135,8 @@ body {
   }
 
   .contenido{
-    width: 700px;
+    width: 55%;
   }
   .contenido h2{
     text-align: center;
- 
   }

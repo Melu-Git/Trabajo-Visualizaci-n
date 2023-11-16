@@ -1,14 +1,14 @@
-const section1 = document.getElementById('section1');
-        const section2 = document.getElementById('section2');
+const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+let currentImageIndex = 0;
 
-        window.addEventListener('scroll', () => {
-            const scrollPosition = window.pageYOffset;
+function showNextImage() {
+  images[currentImageIndex].classList.remove('active');
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+  images[currentImageIndex].classList.add('active');
+}
+var intervalo = setInterval(showNextImage, 2000);
 
-            if (scrollPosition >= section1.offsetHeight) {
-                section1.style.backgroundColor = '#00ff00';
-                section2.style.backgroundColor = '#ff0000';
-            } else {
-                section1.style.backgroundColor = '#ff0000';
-                section2.style.backgroundColor = '#00ff00';
-            }
-        });
+setInterval(function(){
+    Next();
+}, 500);

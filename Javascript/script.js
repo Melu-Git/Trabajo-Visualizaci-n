@@ -4,9 +4,6 @@ function selectAvatar(avatarNumber) {
   avatarImage.alt = `Avatar ${avatarNumber} seleccionado`;
 }
 
-
-
-
 // carrousel
 let currentSlide = 0;
 const avatarsContainer = document.querySelector('.avatars');
