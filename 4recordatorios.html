@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <link rel="stylesheet" href="estilos/recordatorios.css">
 </head>
+<style>
+  body{
+      background-image: url(imagenes/prueba.png);
+      height: 80vh;
+  }
+
+</style>
 <body>
-    <section class="barra">
-        <img src="imagenes/fondo.png" alt="">
-        <p>Booket</p>
-        </section>
 
         <div id="backArrow" onclick="redirigirAtras('3metaDiaria.html')">
             <span class="material-symbols-outlined" style="color: black;">arrow_back</span>
@@ -46,48 +49,6 @@
     
         <br>
     
-    <!-- <main>
-        <h2>Activá el recordatorio para alcanzar tu meta diaria</h2>
-        <img src="imagenes/alerta.png" alt="Imagen de fondo" class="imagen-fondo">
-        <section class="caja-contenedora">
-            <div class="contenido" id="superpuesta">
-                <div class="selector-container">
-                    <label for="opciones">Seleccion el medio:</label>
-                    <select id="opciones" name="opciones">
-                      <option value="" disabled selected hidden>Ej: email</option>
-                      <option value="opcion1">email</option>
-                      <option value="opcion2">Opción 2</option>
-                      <option value="opcion3">Opción 3</option>
-                      </select>
-                  </div>
-
-                  <div class="selector-container">
-                    <label for="opciones">Días de la semana:</label>
-                    <ul id="opciones" name="opciones" multiple>
-                      <li class="lun">L</li>
-                      <li class="mar">M</li>
-                      <li class="mie">X</li>
-                      <li class="jue">J</li>
-                      <li class="vie">V</li>
-                      <li class="sab">S</li>
-                      <li class="dom">D</li>
-                    </ul>
-                  </div>
-                  
-                  <div class="selector-container">
-                    <label for="opciones">Horario:</label>
-                    <select id="opciones" name="opciones">
-                      <option value="" disabled selected hidden>Ej: email</option>
-                      <option value="opcion1">email</option>
-                      <option value="opcion2">Opción 2</option>
-                      <option value="opcion3">Opción 3</option>
-                      </select>
-                  </div>
-
-            </div>
-        </section>
-
-    </main> -->
     <h2>Activá el recordatorio para alcanzar tu meta diaria</h2>
     <main>
         <div class="imagen-superpuesta">
@@ -98,10 +59,10 @@
                     <div class="selector-container">
                         <label for="opciones">Seleccion el medio:</label>
                         <select id="opciones" name="opciones">
-                          <option value="" disabled selected hidden>Ej: email</option>
-                          <option value="opcion1">email</option>
-                          <option value="opcion2">Opción 2</option>
-                          <option value="opcion3">Opción 3</option>
+                          
+                          <option value="opcion1" selected>Email</option>
+                          <option value="opcion2">WhatsApp</option>
+                          <option value="opcion3">Escritorio</option>
                           </select>
                       </div>
     
@@ -119,21 +80,28 @@
                       </div>
                       
                       <div class="selector-container">
-                        <label for="opciones">Horario:</label>
+                        <label for="opciones">Selecciona el rango horario:</label>
                         <select id="opciones" name="opciones">
-                          <option value="" disabled selected hidden>Ej: email</option>
-                          <option value="opcion1">email</option>
-                          <option value="opcion2">Opción 2</option>
-                          <option value="opcion3">Opción 3</option>
+                          
+                          <option value="opcion1">Mañana</option>
+                          <option value="opcion2">Tarde</option>
+                          <option value="opcion3">Noche</option>
                           </select>
                       </div>
     
+                    </div>
                 </div>
-
-
             </div>
+        </main>
+        <div id="contenedorBoton">
+
+            <button class="boton-fuera-main" onclick="siguientePagina()">CONTINUAR</button>
         </div>
-    </main>
+        <div class="espacio">
+           
+        </div>
+
+    
     
     <script src="Javascript/lineaDePasos.js"></script>
     <script src="Javascript/recordatorios.js"></script>

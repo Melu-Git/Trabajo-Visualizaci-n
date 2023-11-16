@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  @font-face {
+    font-family: "HARRYP__.ttf";
+    src: url("HARRYP__.ttf.TTF");
+  }
+  
+  /* ESTILOS DE LA BARRA DE PASOS */
+  #ProgressSteps {
+    margin: 40px auto;
+    max-width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    /* border: 1px solid #bbb; */
+  }
+  
+  #StepsLineBg {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    height: 3px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  
+  #StepsLine {
+    position: absolute;
+    height: 3px;
+    background-color: #4caf50;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.45s ease;
+    width: 66.66%;
+  }
+  
+  .steps {
+    height: 30px;
+    width:30px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #bbb;
+    transition: all 0.5s ease;
+  
+  }
+  
+  .active {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .controls-container {
+    margin-top: 20px;
+  }
+  #backArrow {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: 3px solid #bbb;
+    transition: all 0.5s ease;
+    margin-top: 30px;
+    margin-left:30px;
+ }
+ #stepInicio{
+    height: 30px;
+    width: 30px;
+    
+ }
+ 
+ #backArrow:hover {
+    background-color: #4caf50;
+    color: white;
+ }
+
+ #ProgressSteps img{
+  height: 60px;
+  padding-bottom: 8px;
+ 
+ }
+ 
+ #ProgressSteps .steps .active-img {
+  display: none;
+}
+
+#ProgressSteps .steps.active .active-img {
+  display: block;
+}
+
+#ProgressSteps .steps.active .inactive-img {
+  display: none;
+}
+  /* FIN ESTILOS DE LA BARRA DE PASOS */
+ 
+
+  h2{
+    font-family: "HARRYP__.ttf";
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  /* .contenedor-principal{
+    width: 500px;
+    height: 300px;
+margin-left: 500px;
+margin-top: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  .contenido img{
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  */
+  .contenido{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  } 
+
+
+  .contenedor-principal{
+    width: 500px;
+    height: 300px;
+    margin-left: 500px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  .contenido img{
+    border-radius: 10px;
+    width: 250px;
+
+    height:250px;
+  } 
+.informacion input{
+padding: 15px;
+border-radius: 10px;
+margin-top: 20px;
+margin-left: 15px;
+width: 220px;
+}
+
+.boton-fuera-main {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -170%);
+    width: 400px;
+    height: 50px;
+    background-color: #3B5154;
+    border-radius: 10px;
+    font-family: 'Crimson Pro', serif;
+    font-size:15px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0px 4px 4px #293738;
+    color: #fff;
+    
+  }
+
+  .boton-fuera-main:hover{
+    background-color: #57787c;
+  }
