@@ -13,6 +13,7 @@ body {
     background-color: #355C39;
     display: grid;
     grid-template-columns: 1fr 2fr 0.8fr;
+    border-bottom: 3px solid #28452b;
   }
   .header1{
     text-align: center;
