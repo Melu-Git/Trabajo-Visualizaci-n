@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/index.css">
@@ -10,10 +10,21 @@
     <title>Foro</title>
 </head>
 <body>
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <!-- <img src="imagenes/Mapache.png" controls loop></video> -->
+            <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
+            <div class="botones-cs">
+              <a  id="cerrarsesion" href="LandingPage.html">CERRAR SESION</a>
+              <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
+            </div>
+        </div>
+      </div>
     <header>
         
     </header>
     <section class="probar">
+        
         <div class="header1"></div><!--FALTA LOGO!!!-->
         <div class="header2">
             <div class="barra-busqueda">
@@ -44,13 +55,80 @@
             </section>
         </div>
 
-        <div class="terceraParte" id="menuPrincipal">
+        <div class="terceraParte">
             <h1>Menu Principal</h1>
-            <!--Menu lateral-->
-        </div>
+              <div class="contenedor">
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">home</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('0index.html')"><h3>INICIO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('notificaciones.html')"><h3>NOTIFICACIONES</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">auto_stories</span>
+      
+                      </div>
+                      <div class="tittle-menu"><h3>PROGRESO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">personal_bag</span>
+      
+                      </div>
+                      <div class="tittle-menu"><h3>MIS CURSOS</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('comunidad.html')"><h3>FORO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">help</span>
+                         
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('Preg_Frecuentes.html')"><h3>PREGUNTAS FRECUENTES</h3></div>
+                  </div>
+                  <div class="item-menu" onclick="openPopup()">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">logout</span>
+                    </div>
+                    <div class="tittle-menu"><h3>CERRAR SESION</h3></div>
+                </div>
+              </div>
+          
+          </div>
     </main>
     <footer>
 
     </footer>
+    <script src="Javascript/index.js"></script>
+    <script>
+        function irAPagina(url) {
+            window.location.href = url;
+        }
+      </script>
 </body>
 </html>

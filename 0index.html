@@ -24,10 +24,10 @@
   <!-- Agrega este código dentro del body de tu HTML -->
 <div id="popupContainer" class="popup-container">
   <div class="popup-content">
-      <img src="imagenes/popu.gif" controls loop></video>
+      <!-- <img src="imagenes/Mapache.png" controls loop></video> -->
       <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
       <div class="botones-cs">
-        <button id="cerrarsesion">CERRAR SESION</button>
+        <a  id="cerrarsesion" href="LandingPage.html">CERRAR SESION</a>
         <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
       </div>
   </div>
@@ -300,14 +300,15 @@
 
 
     <div class="terceraParte">
+      <h1>Menu Principal</h1>
         <div class="contenedor">
             <div class="item-menu">
                 <div class="icono">
                     
-                    <span class="material-symbols-outlined" id="probanndoIcono">bookmark</span>
+                    <span class="material-symbols-outlined" id="probanndoIcono">home</span>
 
                 </div>
-                <div class="tittle-menu"><h3>FAVORITOS</h3></div>
+                <div class="tittle-menu"  onclick="irAPagina('0index.html')"><h3>INICIO</h3></div>
             </div>
 
             <div class="item-menu">
@@ -316,7 +317,7 @@
                     <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
 
                 </div>
-                <div class="tittle-menu"><h3>NOTIFICACIONES</h3></div>
+                <div class="tittle-menu"  onclick="irAPagina('notificaciones.html')"><h3>NOTIFICACIONES</h3></div>
             </div>
 
             <div class="item-menu">
@@ -343,7 +344,7 @@
                     <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
 
                 </div>
-                <div class="tittle-menu"><h3>FORO</h3></div>
+                <div class="tittle-menu"  onclick="irAPagina('comunidad.html')"><h3>FORO</h3></div>
             </div>
 
             <div class="item-menu">
@@ -351,9 +352,8 @@
                     
                     <span class="material-symbols-outlined" id="probanndoIcono">help</span>
                    
-
                 </div>
-                <div class="tittle-menu"><h3>PREGUNTAS FRECUENTES</h3></div>
+                <div class="tittle-menu"  onclick="irAPagina('Preg_Frecuentes.html')"><h3>PREGUNTAS FRECUENTES</h3></div>
             </div>
             <div class="item-menu" onclick="openPopup()">
               <div class="icono">
@@ -372,5 +372,10 @@
 <script src="Javascript/carrousel.js"></script>
 <script src="Javascript/index.js"></script>
 <script src="Javascript/categorias.js"></script>
+<script>
+  function irAPagina(url) {
+      window.location.href = url;
+  }
+</script>
 </body>
 </html>

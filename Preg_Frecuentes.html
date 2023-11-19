@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/index.css">
     <link rel="stylesheet" href="estilos/Preg_Frecuentes.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <!-- <img src="imagenes/Mapache.png" controls loop></video> -->
+            <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
+            <div class="botones-cs">
+              <a  id="cerrarsesion" href="LandingPage.html">CERRAR SESION</a>
+              <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
+            </div>
+        </div>
+      </div>
     <header>
         
     </header>
@@ -35,7 +51,8 @@
             <section class="preguntasFrec">
                 <div class="pregunta">
                     <h3>¿Cómo puedo inscribirme en un curso?</h3>
-                    <p>Para inscribirse en un curso, debe crear una cuenta en nuestro sitio web. Una vez que tenga una cuenta, puede seleccionar el curso que desea tomar y hacer clic en el botón "Inscribirse".</p>
+                    <p>Para inscribirse en un curso, debe crear una cuenta en nuestro sitio web.</p>
+                    <p> Una vez que tenga una cuenta, puede seleccionar el curso que desea tomar y hacer clic en el botón "Inscribirse".</p>
                 </div>
                 <div class="pregunta">
                     <h3>¿Qué materiales necesito para tomar un curso?</h3>
@@ -69,13 +86,81 @@
         </div>
         </div>
 
-        <div class="terceraParte" id="menuPrincipal">
+        <div class="terceraParte">
             <h1>Menu Principal</h1>
-            <!--Menu lateral-->
-        </div>
+              <div class="contenedor">
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">home</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('0index.html')"><h3>INICIO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('notificaciones.html')"><h3>NOTIFICACIONES</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">auto_stories</span>
+      
+                      </div>
+                      <div class="tittle-menu"><h3>PROGRESO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">personal_bag</span>
+      
+                      </div>
+                      <div class="tittle-menu"><h3>MIS CURSOS</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
+      
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('comunidad.html')"><h3>FORO</h3></div>
+                  </div>
+      
+                  <div class="item-menu">
+                      <div class="icono">
+                          
+                          <span class="material-symbols-outlined" id="probanndoIcono">help</span>
+                         
+                      </div>
+                      <div class="tittle-menu"  onclick="irAPagina('Preg_Frecuentes.html')"><h3>PREGUNTAS FRECUENTES</h3></div>
+                  </div>
+                  <div class="item-menu" onclick="openPopup()">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">logout</span>
+                    </div>
+                    <div class="tittle-menu"><h3>CERRAR SESION</h3></div>
+                </div>
+              </div>
+          
+          </div>
     </main>
     <footer>
 
     </footer>
+
+    <script>
+        function irAPagina(url) {
+            window.location.href = url;
+        }
+      </script>
+      <script src="Javascript/index.js"></script>
 </body>
 </html>

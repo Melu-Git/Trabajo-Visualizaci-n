@@ -8,17 +8,22 @@ body {
     font-family: "HARRYP__.ttf";
     src: url("HARRYP__.ttf.TTF");
   }
-  /* .content{
 
-display: flex; 
-  
-} */
+  h1{
+    font-family: "HARRYP__.ttf";
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "HARRYP__.ttf";
+    text-shadow: 0px 0px 10px white;
 
+  }
   .probar {
     background-color: #202124;
     display: grid;
     grid-template-columns: 1fr 2fr 0.8fr;
-    border-bottom: 3px solid #28452b;
+    /* border-bottom: 3px solid #28452b; */
   }
   .header1{
     text-align: center;
@@ -54,7 +59,7 @@ display: flex;
   }
   .header3{
     justify-content: end;
-    margin-left:70px;
+    margin-left:110px;
     margin-top: 23px;
   }
 
@@ -106,50 +111,10 @@ margin-right: 20px;
   .terceraParte {
     background-color: #202124;
     height: 100%;
-    
+    align-items: center;
+    text-align: center;
   }
-<<<<<<< HEAD
 
-  /* ESTILOS DEL SLIDER
-  .card .image{
-    width: 110px;
-    height: 120px;
-    border-radius: 10px;
-    }
-    .card .image img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        object-fit: cover;
-    }
-    
-    .card{
-        position: relative;
-        width: 130px;
-    background-color: black;
-        border: 3px solid blue;
-        border-radius: 20px;
-    }
-    .card .card-content{
-        position: relative;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 20px;
-    
-    }
-    .card .name-profession{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 10px;
-        color: white;
-    }
-    
-    .name-profession .name{
-        font-size: 20px;
-        font-weight: 600;
-    } */
 
 /* ESTILOS DE LA TERCERA PARTE */
     .item-menu{
@@ -313,6 +278,7 @@ margin-right: 20px;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
 }
 
 .popup-content {
@@ -348,6 +314,18 @@ margin-right: 20px;
   color: #4CAF50;
   font-weight: 500;
   margin-right: 10px;
+  margin-left: 10px;
+}
+.popup-container .botones-cs a{
+  padding: 15px 40px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  border: 2px solid #4CAF50;
+  color: #4CAF50;
+  font-weight: 500;
+  text-decoration: none;
+
   margin-left: 10px;
 }
 .popup-container #cerrarpopu:hover{
@@ -437,7 +415,5 @@ margin-right: 20px;
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1);
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.671);
 }
-=======
+
   
-  
->>>>>>> 5ce81ed5750929fb89fb39fec04da492be89a51f

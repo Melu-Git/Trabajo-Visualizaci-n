@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/LandingPage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Booket - Página Principal</title>
+
+    <style>
+        .swiper-slide{
+            background-image: url(imagenes/pergamino.png);
+        }
+    </style>
+
 </head>
 <body>
     <h1 id="titulo"> Booket</h1>
@@ -14,30 +23,37 @@
         <div id="main_Sec1" class="main_Sec">
             <div class="img-sec"><img src="imagenes/Personaje (1).png" id="img_S1"></div>
         </div>
-
-        <div class="carousel">
-                    <img src="imagenes/papiro (1).png" alt="Imagen 1" loading="eager" id="img1">
-                    <img src="imagenes/papiro (2).png" alt="Imagen 2">
-                    <img src="imagenes/papiro (3).png" alt="Imagen 3">
-                    <img src="imagenes/papiro (4).png" alt="Imagen 4">
-                    <img src="imagenes/papiro (5).png" alt="Imagen 5">
-                    <img src="imagenes/papiro (6).png" alt="Imagen 6">
-        </div>
-        </div>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><h1>COMENCEMOS</h1></div>
+      <div class="swiper-slide"></div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 
     </main>
 <footer>
     <section class="containerFooter">
         <div class="datosFooter">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo cumque blanditiis aliquam ipsam consequuntur natus tenetur a quia architecto fugit ex ullam voluptate veniam.</p>
+            <p>Booket software © 2023 Warner Bros. Entertainment Inc. Developed by Avalanche Software. WIZARDING WORLD and HARRY POTTER Publishing Rights © Entertainment Inc.
+
+            </p>
         </div>
         <div class="redes">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <a href="#"><img src="imagenes/FB-ICONO.png" alt=""></a>
+            <a href="#"><img src="imagenes/IG-ICONO.png" alt=""></a>
+            <a href="#"><img src="imagenes/TW-ICONO.png" alt=""></a>
         </div>
         <div class="datosFooter">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium illo cumque blanditiis aliquam ipsam consequuntur natus tenetur a quia architecto fugit ex ullam voluptate veniam</p>
+            <p>WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s23)</p>
         </div>
     </section>
     <div class="copy">
@@ -45,5 +61,18 @@
     </div>
 </footer>
     <script> src= "JavaScript/LandingPage.js"</script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+  </script>
 </body>
 </html>

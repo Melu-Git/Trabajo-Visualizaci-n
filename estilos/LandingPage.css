@@ -6,7 +6,7 @@ body {
 .container_main{
     margin-bottom: 20px;
     width: 80%;
-    display: flex; 
+    display: flex;
     height: 60vh;
     justify-content: center;
 }
@@ -21,7 +21,7 @@ body {
 
 @font-face {
     font-family: "HARRYP__.ttf";
-    src: url("HARRYP__.ttf.TTF"); 
+    src: url("HARRYP__.ttf.TTF");
     /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
   }
 #titulo{
@@ -30,33 +30,34 @@ body {
     margin-top: 20px;
     color: #252f4e;
     text-align: center;
-    text-shadow: 5px 7px 5px black;
-    
+    text-shadow: 5px 7px 5px rgb(241, 241, 241);
+
 }
 /*SLIDER*/
+/* 
+/*SECCIONES MAIN
 
-/*SECCIONES MAIN*/
-/*fondo*/
 .main_Sec{
     width: 70%;
     min-height: 50vh;
     align-items: center;
 }
 
-/*IMAGENES SECCIONES*/
+/*IMAGENES SECCIONES
 .img-sec{
     padding: 0;
     width: 50%;
     display: flex;
-    align-items: center;
+    justify-content: flex-end; 
     justify-content: center;
 }
 #img_S1{
     width: auto;
     height: 500px;
-    margin:0; /*arriba der abajo izq*/
-}
+    margin:0;
+    justify-content: flex-end;
 
+}
 
 .carousel {
     width: 60%;
@@ -64,7 +65,7 @@ body {
     position: relative;
     overflow: hidden;
   }
-  
+
   .carousel img {
     width: 100%;
     height: 100%;
@@ -72,18 +73,18 @@ body {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 1s ease-in-out; 
+    transition: opacity 1s ease-in-out;
 }
   .carousel img.active {
     opacity: 1;
-  }
+  } */
 
 /*FOOTER*/
 footer {
     width: 100%;
     background-color: #252f4e;
 }
-.containerFooter{ 
+.containerFooter{
     margin: 0 10% 0 10%;
     width: 80%;
     display: grid;
@@ -92,12 +93,26 @@ footer {
     justify-content: center;
     grid-template-columns: repeat(3,2fr);
 }
-.redes a{
+
+.redes {
+    display: flex;
+  margin-left: 200px;
+    align-items: center;
+}
+
+.redes a {
     display: flex;
     color: #fff;
     flex-direction: column;
     text-decoration: none;
 }
+
+.redes img {
+    width: 50px; 
+    height: 50px;
+
+}
+
 .copy{
     margin: 0;
     padding: 0;
@@ -112,3 +127,107 @@ footer p {
 }
 
 
+.swiper {
+    width:90%;
+    height: 90%;
+    transform: translate(10%, -10%);
+    background-color: transparent;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .container_main {
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex;
+    height: 60vh;
+    justify-content: flex-end; /* Alinea los elementos al final del eje principal (derecha) */
+}
+
+.imagen {
+    /* Estilos para el contenedor de la primera imagen (pergamino) */
+    width: 50%; /* o el ancho deseado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel {
+    width: 60%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+    opacity: 1;
+}
+.img-sec {
+    padding: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px; /* Ajusta este valor según sea necesario para mover la imagen más arriba */
+    margin-left: 250px;
+}
+
+#img_S1 {
+    width: auto;
+    height: 500px;
+    margin: 0; /* arriba der abajo izq */
+}
+
+
+/* Estilo de las flechas de navegación del Swiper */
+ /* .swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #0000008e;
+  border-radius: 50%;
+}
+
+.swiper-button-next{
+    margin-left: 120px;
+}
+ .swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #555;
+} */
+
+.swiper-slide h1{
+    font-family: "HARRYP__.ttf";
+    font-size: 80px;
+    margin-top: 20px;
+    color: #ffffff;
+    margin-top: 90px;
+    text-align: center;
+    text-shadow: 5px 7px 5px black;
+}
