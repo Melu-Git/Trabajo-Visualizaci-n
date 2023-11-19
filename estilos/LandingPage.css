@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: fit-content;
+}
+.container_main{
+    margin-bottom: 20px;
+    width: 80%;
+    display: flex; 
+    height: 60vh;
+    justify-content: center;
+}
+.fondo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+@font-face {
+    font-family: "HARRYP__.ttf";
+    src: url("HARRYP__.ttf.TTF"); 
+    /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
+  }
+#titulo{
+    font-family: "HARRYP__.ttf";
+    font-size: 180px;
+    margin-top: 20px;
+    color: #252f4e;
+    text-align: center;
+    text-shadow: 5px 7px 5px black;
+    
+}
+/*SLIDER*/
+
+/*SECCIONES MAIN*/
+/*fondo*/
+.main_Sec{
+    width: 70%;
+    min-height: 50vh;
+    align-items: center;
+}
+
+/*IMAGENES SECCIONES*/
+.img-sec{
+    padding: 0;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img_S1{
+    width: auto;
+    height: 500px;
+    margin:0; /*arriba der abajo izq*/
+}
+
+
+.carousel {
+    width: 60%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+  .carousel img.active {
+    opacity: 1;
+  }
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #252f4e;
+}
+.containerFooter{ 
+    margin: 0 10% 0 10%;
+    width: 80%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,2fr);
+}
+.redes a{
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    text-decoration: none;
+}
+.copy{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+}
+footer p {
+    color: #fff;
+    text-decoration: none;
+}
+
+

@@ -1,0 +1,88 @@
+.container-main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container-preg{
+    width: 100%;
+    background-color: #1e3521;
+}
+.preguntasFrec{ /*section*/
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 91rem;
+    display: grid;
+    height: 83.7vh;
+    grid-row-gap: 0px;
+    align-items: center;
+    grid-column-gap: 0px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+}
+.pregunta{
+    padding: 20px;
+    height: 15rem;
+    border-radius: 10px;
+    margin: 10px 5px 0px 10px;
+    border: 9px outset #4f534f;
+    background-color: rgba(240, 248, 255, 0.903);
+}
+.pregunta2{
+    padding: 20px;
+    height: 15rem;
+    border-radius: 10px;
+    margin: 0px 5px 5px 10px;
+    border: 9px outset #4f534f;
+    background-color: rgba(240, 248, 255, 0.903);
+}
+h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face {
+    font-family: "HARRYP__.ttf";
+    src: url("HARRYP__.ttf.TTF"); 
+    /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
+}
+#nombre-preguntas{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #1e3521;
+}
+#nombre-preguntas h1{
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 70px;
+    padding-left: 30px;
+    font-family: "HARRYP__.ttf";
+    text-shadow: 0px 0px 10px white; /*izq/der ,arriba/abajo, densidad */
+}
+.terceraParte{
+    display: flex;
+    height: 100%;
+    justify-content: right;
+    background-color: #355C39;
+    border-left: 4px solid #28452b;;
+}
+.terceraParte h1{
+    display: flex;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-right: 100px;
+    text-align: center;
+    font-family: "HARRYP__.ttf";
+    text-shadow: 0px 0px 10px white; /*izq/der ,arriba/abajo, densidad */
+}
+.caja-contenedora {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100%;
+  }
