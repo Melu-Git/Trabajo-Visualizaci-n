@@ -26,6 +26,7 @@
     margin: 10px 5px 0px 10px;
     border: 9px outset #4f534f;
     background-color: rgba(240, 248, 255, 0.903);
+
 }
 .pregunta2{
     padding: 20px;
@@ -43,7 +44,8 @@
 }
 .preguntasFrec p{
     text-align: justify;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    font-family: 'Roboto', sans-serif;
 }
 
 #nombre-preguntas{
@@ -66,4 +68,3 @@
     grid-template-columns: repeat(2,1fr);
     height: 100%;
   }
-  

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos/index.css">
@@ -17,6 +17,16 @@
     <title>Preguntas Frecuentes</title>
 </head>
 <body>
+    <div id="popupContainer" class="popup-container">
+        <div class="popup-content">
+            <img src="imagenes/PP_1.png" controls loop></video>
+            <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
+            <div class="botones-cs">
+              <button id="cerrarsesion"><a href="LandingPage.html">CERRAR SESION</a></button>
+              <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
+            </div>
+        </div>
+      </div>
     <main class="container-main">
         <div class="container-preg">
             <div id="nombre-preguntas">
@@ -25,7 +35,8 @@
             <section class="preguntasFrec">
                 <div class="pregunta">
                     <h3>¿Cómo puedo inscribirme en un curso?</h3>
-                    <p>Para inscribirse en un curso, debe crear una cuenta en nuestro sitio web. Una vez que tenga una cuenta, puede seleccionar el curso que desea tomar y hacer clic en el botón "Inscribirse".</p>
+                    <p>Para inscribirse en un curso, debe crear una cuenta en nuestro sitio web.</p>
+                    <p> Una vez que tenga una cuenta, puede seleccionar el curso que desea tomar y hacer clic en el botón "Inscribirse".</p>
                 </div>
                 <div class="pregunta">
                     <h3>¿Qué materiales necesito para tomar un curso?</h3>

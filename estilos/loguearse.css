@@ -3,7 +3,6 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
   @font-face {
@@ -14,14 +13,13 @@ body {
   
   /* Form section */
   .formulario-seccion {
-    height: 100%;
-    width: 100%;
-
+    height: 60%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   padding-bottom: 30px;
+    margin-left: 50px;
   }
   
   .formulario {
@@ -29,7 +27,7 @@ body {
     box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
     width: 380px;
     padding: 20px;
-    background-color: #355c3996;
+    background-color: #355c39;
     border-radius: 10px;
   }
   
@@ -58,93 +56,14 @@ text-transform: uppercase;
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 10px;
-background-color: transparent;
-margin-bottom: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
 
 
   }
   
   input[type="submit"] {
-    background-color: #3B5154;
-    box-shadow: 1px 1px 1px solid #0a0f0f;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 15px;
-    font-family: 'Crimson Pro', serif;
-    text-transform: uppercase;
-   
-  }
-body {
-    font-family: sans-serif;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: "HARRYP__.ttf";
-    src: url("HARRYP__.ttf.TTF"); /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
-  }
-  
-  
-  /* Form section */
-  .formulario-seccion {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   padding-bottom: 30px;
-  }
-  
-  .formulario {
-    border: 1px solid rgb(180, 178, 178);
-    box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
-    width: 380px;
-    padding: 20px;
-    background-color: #355c3996;
-    border-radius: 10px;
-  }
-  
-  .dos-columnas {
-    display: flex;
-    margin-bottom: 15px;
-    justify-content: center;
-    align-items: center;
-  }
-  
-
-  label {
-    font-family: 'Crimson Pro', serif;
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-margin-top: 15px;
-color: #fff;
-margin-bottom: 10px;
-text-transform: uppercase;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    border-radius: 10px;
-background-color: transparent;
-margin-bottom: 10px;
-
-
-  }
-  
-  input[type="submit"] {
-    background-color: #3B5154;
+    background-color: #4CAF50;
     box-shadow: 1px 1px 1px solid #0a0f0f;
     color: #fff;
     cursor: pointer;
@@ -170,13 +89,13 @@ margin-bottom: 10px;
   }
  
   input {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="correo"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="contraseña"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
 
@@ -185,35 +104,53 @@ margin-bottom: 10px;
     font-size: 50px;
     color: white;
     text-align: center;
+    margin-right: 50px;
     margin-bottom: 25px;
     letter-spacing: 2px;
   }
-  .boton-ubi-derecha{
+
+  .imagen-form img {
+    width: 300px;
+    height: 350px;
     float: right;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+  .boton-ubi-derecha {
+    float: right;
+    margin-right: 40px;
+    margin-top: 50px;
     border-radius: 10px;
     padding: 15px 30px;
     text-transform: uppercase;
     color: #fff;
     border: 1px solid rgb(180, 178, 178);
-    background-color: transparent;
-    font-family: "HARRYP__.ttf";
+    background-color: #436E54;
+    font-family: 'Crimson Pro', serif;
     letter-spacing: 1px;
     font-size: 15px;
-  }
-  .boton-ubi-derecha:hover{
+}
+
+.boton-ubi-derecha:hover {
     box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
-    background-color: #3B5154;
-  }
-  
-  .imagen-form img {
-    width: 350px;
-    height:350px;
+    background-color: #4CAF50;
+}
+
+
+.seccion-derecha p {
     float: right;
-    margin-right: 50px;
-    margin-left: 15px;
+    clear: right; /* Agrega esta propiedad para evitar que elementos floten en el lado derecho */
+    margin-right:42px;
     border-radius: 10px;
-  }
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Crimson Pro', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+}
 
   

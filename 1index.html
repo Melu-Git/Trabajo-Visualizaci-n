@@ -18,16 +18,16 @@
 </head>
 <body>
   <!-- Agrega este código dentro del body de tu HTML -->
-<div id="popupContainer" class="popup-container">
-  <div class="popup-content">
-      <img src="imagenes/PP_1.png" controls loop></video>
-      <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
-      <div class="botones-cs">
-        <button id="cerrarsesion"><a href="LandingPage.html">CERRAR SESION</a></button>
-        <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
-      </div>
+  <div id="popupContainer" class="popup-container">
+    <div class="popup-content">
+        <img src="imagenes/PP_1.png" controls loop></video>
+        <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
+        <div class="botones-cs">
+          <button id="cerrarsesion"><a href="LandingPage.html">CERRAR SESION</a></button>
+          <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
+        </div>
+    </div>
   </div>
-</div>
 
 <section class="caja-contenedora">
     <div class="primeraParte">
@@ -93,6 +93,22 @@
           </div>
         </div>  
 
+        <article id="reciente">
+          <div class="tittle-categoria2">
+            <span class="material-symbols-outlined" style="color: white;">schedule</span>
+            <p>RECIENTE</p>
+        </div>
+        <div class="ordenar">
+        <label for="opcionesOrden">
+          Ordenar por:
+          <select id="opcionesOrden">
+              <option value="texto">Curso</option>
+              <option value="numero">Reciente</option>
+          </select>
+        </label>
+        <button id="ordenarBtn">Ordenar</button>
+        </div>
+        </article>
 
       <div class="cursos-cards" data-id="1">
         <div class="curso-contenedor" data-id="1" data-subcategoria="marketing">

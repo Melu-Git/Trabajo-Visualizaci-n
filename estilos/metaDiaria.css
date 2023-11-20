@@ -39,15 +39,18 @@ body {
     height: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
+    box-shadow: 5px 5px 5px rgba(78, 78, 78, 0.5);
     margin: 0 auto; /* Centra las opciones dentro del contenedor */
+background-color: #ffffffdc;
 
-
+  }
+  .opciones:hover{
+    background-color: #4CAF50;
   }
 
 
   #titulos-opciones{
-    color: #fff;
+    color: rgb(17, 17, 17);
     font-family: 'Crimson Pro', serif;
     margin-left: 15px;
     margin-top: 12px;
@@ -80,17 +83,17 @@ body {
   #tiempo-opciones{
     margin-right: 15px;
     margin-left: 5px;
-    color: #fff;
+    color: rgb(17, 17, 17);
     font-family: 'Roboto', sans-serif;
   }
   .material-symbols-outlined{
-    color: #fff;
+    color: rgb(17, 17, 17);
   }
 
 
   .opciones.seleccionado {
-    background-color: #30586ca8;
-    border: 1px solid  #30586C;
+    background-color: #4CAF50;
+    border: 1px solid rgb(180, 178, 178);
     box-shadow: 5px 5px 5px #30586ca8;
   }
   
@@ -102,7 +105,7 @@ body {
   #boton-continuar {
     width: 400px;
     height: 50px;
-    background-color: #3B5154;
+    background-color: #355c39;
     border-radius: 10px;
     font-family: 'Crimson Pro', serif;
     font-size:15px;
@@ -113,7 +116,7 @@ body {
   }
   
   #boton-continuar:hover{
-    background-color: #57787c;
+    background-color: #4CAF50;
   }
   .boton{
     width: 100%; 
