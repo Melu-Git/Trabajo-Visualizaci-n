@@ -3,20 +3,25 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+@font-face {
+    font-family: "HARRYP__.ttf";
+    src: url("HARRYP__.ttf.TTF"); 
+    /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
+}
 .container-chat{
     width: 100%;
 }
 .chat-foro{ /*section*/
-    width: 93rem;
+    width: 94.7rem;
     margin: 0;
-    height: 83.7vh;
-    background-color: #1e3521;
+    height: 91.6vh;
+    background-color: #436E54;
 }
 #nombre-foro{
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: #1e3521;
+    background-color: #436E54;
 }
 #nombre-foro h1{
     font-size: 50px;
@@ -25,20 +30,15 @@
     font-family: "HARRYP__.ttf";
     text-shadow: 0px 0px 10px white; /*izq/der ,arriba/abajo, densidad */
 }
-@font-face {
-    font-family: "HARRYP__.ttf";
-    src: url("HARRYP__.ttf.TTF"); 
-    /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
-}
 .chat-foro #chat2{
-    height: 75vh; 
+    height: 83vh; 
     width: 100%;
 }
 .chat-foro #barra-mensaje{
     margin: 0;
     display: flex;
     padding: 5px;
-    background-color: #1e3521;
+    background-color: #436E54;
     align-items: end;
     justify-items: end;
 }
@@ -69,26 +69,8 @@
     border: none;
 }
 
-.terceraParte{
-    display: flex;
-    height: 100%;
-    justify-content: right;
-    background-color: #355C39;
-    border-left: 4px solid #28452b;;
-}
-.terceraParte h1{
-    display: flex;
-    margin-top: 20px;
-    font-size: 50px;
-    font-weight: 800;
-    margin-right: 100px;
-    text-align: center;
-    font-family: "HARRYP__.ttf";
-    text-shadow: 0px 0px 10px white; /*izq/der ,arriba/abajo, densidad */
-}
 .caja-contenedora {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     height: 100%;
   }
-  
