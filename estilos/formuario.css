@@ -12,35 +12,55 @@
     src: url("HARRYP__.ttf.TTF"); /* Reemplaza "Fuente.ttf" con el nombre del archivo de la fuente que has descargado */
   }
   
-  .boton-ubi-derecha{
+  .boton-ubi-derecha {
     float: right;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 50px;
     border-radius: 10px;
     padding: 15px 30px;
     text-transform: uppercase;
     color: #fff;
     border: 1px solid rgb(180, 178, 178);
     background-color: transparent;
-    font-family: "HARRYP__.ttf";
+    font-family: 'Crimson Pro', serif;
+
     letter-spacing: 1px;
     font-size: 15px;
-  }
-  .boton-ubi-derecha:hover{
+}
+
+.boton-ubi-derecha:hover {
     box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
     background-color: #3B5154;
-  }
+}
+
+
+.seccion-derecha p {
+    float: right;
+    clear: right; /* Agrega esta propiedad para evitar que elementos floten en el lado derecho */
+    margin-right:42px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    font-family: 'Crimson Pro', serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+  
+
   /* Form section */
   .formulario-seccion {
-
     width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   padding-bottom: 30px;
+    margin-top: 50px; /* Ajusta el margen superior según tus necesidades */
+    margin-left: -50px;
   }
+  
   
   .formulario {
     border: 1px solid rgb(180, 178, 178);
