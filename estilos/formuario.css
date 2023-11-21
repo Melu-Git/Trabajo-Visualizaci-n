@@ -21,7 +21,7 @@
     text-transform: uppercase;
     color: #fff;
     border: 1px solid rgb(180, 178, 178);
-    background-color: transparent;
+    background-color: #436E54;
     font-family: 'Crimson Pro', serif;
 
     letter-spacing: 1px;
@@ -30,7 +30,7 @@
 
 .boton-ubi-derecha:hover {
     box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
-    background-color: #3B5154;
+    background-color: #4CAF50;
 }
 
 
@@ -67,7 +67,7 @@
     box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
     width: 380px;
     padding: 20px;
-    background-color: #355c3996;
+    background-color: #355c39;
     border-radius: 10px;
 
   }
@@ -84,37 +84,38 @@
     font-size: 16px;
     font-weight: bold;
     display: block;
-margin-top: 15px;
-color: #fff;
-text-transform: uppercase;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
   }
   
   input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #263626;
     box-sizing: border-box;
     border-radius: 10px;
-background-color: transparent;
-margin-top: 10px;
-margin-bottom: 5px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
 
   }
   
   input[type="submit"] {
-    background-color: #3B5154;
+    background-color: #4CAF50;
     box-shadow: 1px 1px 1px solid #0a0f0f;
     color: #fff;
     cursor: pointer;
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 15px;
     font-family: 'Crimson Pro', serif;
     text-transform: uppercase;
   }
   input[type="submit"]:hover {
-    background-color: #57787c;
+    background-color: #4CAF50;
     box-shadow: 2px 2px 2px solid #0a0f0f;
     color: white;
     cursor: pointer;
@@ -145,11 +146,12 @@ margin-bottom: 5px;
     color: white;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 50px;
   }
   
   .imagen-form img {
-    width: 450px;
-    height:535px;
+    width: 330px;
+    height:450px;
     float: right;
     margin-right: 50px;
 
@@ -157,17 +159,17 @@ margin-bottom: 5px;
   }
 
   input[name="correo"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="contraseña"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="nombre"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="apellido"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }
   input[name="edad"]::placeholder {
-    color: white;
+    color: rgb(0, 0, 0);
   }

@@ -3,18 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Inicio</title>
     <link rel="stylesheet" href="estilos/index.css">
 
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
-
     <link href="https://fonts.googleapis.com/css2?family=Neuton:wght@300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;0,800;1,600&family=Merriweather:wght@300;400&display=swap" rel="stylesheet">
@@ -24,30 +20,14 @@
   <!-- Agrega este código dentro del body de tu HTML -->
 <div id="popupContainer" class="popup-container">
   <div class="popup-content">
-      <!-- <img src="imagenes/Mapache.png" controls loop></video> -->
+      <img src="imagenes/PP_1.png" controls loop></video>
       <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
       <div class="botones-cs">
-        <a  id="cerrarsesion" href="LandingPage.html">CERRAR SESION</a>
+        <button id="cerrarsesion"><a href="LandingPage.html">CERRAR SESION</a></button>
         <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
       </div>
   </div>
 </div>
-
-<section class="probar">
-    <div class="header1"><h2>Booket</h2></div>
-    <div class="header2">
-        <div class="barra-busqueda">
-          <input type="text" placeholder="Buscar...">
-          <button type="submit">Buscar</button>
-        </div>
-      </div>
-    <div class="header3">
-        <span class="material-symbols-outlined">notifications</span>
-        <span class="material-symbols-outlined">menu</span>
-        <span class="material-symbols-outlined">account_circle</span>
-    </div>
-
-</section>
 
 <section class="caja-contenedora">
     <div class="primeraParte">
@@ -61,17 +41,21 @@
           </div>
           <div class="imagenes-carrousel" id="robbinImage">
             <img src="imagenes/Lobo.png" alt="">
-            <h3>ROBBIT</h3>
+            <h3>PEETA</h3>
         </div>
         <div class="imagenes-carrousel" id="margotImage">
             <img src="imagenes/Conejo.png" alt="">
-            <h3>MARGOT</h3>
+            <h3>ROBBIT</h3>
         </div>
         <div class="imagenes-carrousel" id="peetaImage">
             <img src="imagenes/Tigre.png" alt="">
-            <h3>PEETA</h3>
+            <h3>MARGOT</h3>
         </div>
-        
+        <div class="imagenes-carrousel" id="peetaImage">
+          <img src="imagenes/Mapache.png" alt="">
+          <h3>FELIX</h3>
+      </div>
+
           <div class="flechas">
             <span class="material-symbols-outlined">arrow_forward_ios</span>
           </div>
@@ -88,14 +72,10 @@
     </div>
 
     <div class="segundaParte">
-        <br>
-        <br>
-
-        <h2>¡UNA FORMA DE APRENDER DIVIRTIENDOSE!</h2>
-        <br>
+        <h2>¡Una forma de aprender divirtiendose!</h2>
     <div class="contenedor-categorias">
         <div class="tittle-categoria">
-            <p>CURSOS</p>
+            <p>Todos los cursos</p>
         </div>
 
         <div class="categorias">
@@ -110,9 +90,10 @@
             </div>
             <div class="subCategorias" data-id="4">
                 <button>Artes digitales</button>
-                
-            </div>
-          </div>   
+          </div>
+        </div>  
+
+
       <div class="cursos-cards" data-id="1">
         <div class="curso-contenedor" data-id="1" data-subcategoria="marketing">
             <div class="add">
@@ -128,7 +109,8 @@
           <br>
           <br>
           <br>
-          <button>VER CURSO</button>
+          <button onclick="irAPagina('detalleCurso.html')">VER CURSO</button>
+
         </div>
     
         <div class="curso-contenedor"  data-id="1" data-subcategoria="marketing">
@@ -262,7 +244,7 @@
             <div class="add">
                 <span class="material-symbols-outlined">add</span>
             </div>
-            <h3>Photoshop e Illustrator</h3>
+            <h3>Illustrator</h3>
           <div class="duracion">
             <div class="icono"><span class="material-symbols-outlined">schedule</span></div>
             <div class="duracion-titulo">6 semanas</div>
@@ -286,91 +268,50 @@
           <br>
           <br>
           <br>
-          <button>VER CURSO</button>
+          <button onclick="irAPagina('detalleCurso.html')">VER CURSO</button>
+
         </div>
       </div>
-
-         
-  
-</div>
-<article id="reciente">
-  <div class="tittle-categoria2">
-    <span class="material-symbols-outlined" style="color: white;">schedule</span>
-    <p>RECIENTE</p>
-</div>
-<div class="ordenar">
-
-<label for="opcionesOrden">
-  Ordenar por:
-  <select id="opcionesOrden">
-      <option value="texto">Curso</option>
-      <option value="numero">Reciente</option>
-  </select>
-</label>
-
-<button id="ordenarBtn">Ordenar</button>
-</div>
-</article>
-
     </div>
-
-
-
+</div>
     <div class="terceraParte">
-      <h1>Menu Principal</h1>
         <div class="contenedor">
+          <h1>Menu Principal</h1>
             <div class="item-menu">
-                <div class="icono">
-                    
-                    <span class="material-symbols-outlined" id="probanndoIcono">home</span>
-
-                </div>
-                <div class="tittle-menu"  onclick="irAPagina('0index.html')"><h3>INICIO</h3></div>
+              <div class="icono">
+                  <span class="material-symbols-outlined" id="probanndoIcono">home</span>
+              </div>
+              <div class="tittle-menu"><a href="0index.html"><h3>INICIO</h3></a></div>
             </div>
-
             <div class="item-menu">
                 <div class="icono">
-                    
+                    <span class="material-symbols-outlined" id="probanndoIcono">person</span>
+                </div>
+                <div class="tittle-menu"><a href="0perfil.html"><h3>PERFIL</h3></a></div>
+            </div>
+            <div class="item-menu">
+                <div class="icono">
                     <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
-
                 </div>
-                <div class="tittle-menu"  onclick="irAPagina('notificaciones.html')"><h3>NOTIFICACIONES</h3></div>
+                <div class="tittle-menu"><a href="notificaciones2.html"><h3>NOTIFICACIONES</h3></a></div>
             </div>
-
             <div class="item-menu">
                 <div class="icono">
-                    
-                    <span class="material-symbols-outlined" id="probanndoIcono">auto_stories</span>
-
-                </div>
-                <div class="tittle-menu"><h3>PROGRESO</h3></div>
-            </div>
-
-            <div class="item-menu">
-                <div class="icono">
-                    
                     <span class="material-symbols-outlined" id="probanndoIcono">personal_bag</span>
-
                 </div>
-                <div class="tittle-menu"><h3>MIS CURSOS</h3></div>
+                <div class="tittle-menu"><a href=""><h3>MIS CURSOS</h3></a></div>
             </div>
-
             <div class="item-menu">
                 <div class="icono">
-                    
                     <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
-
                 </div>
-                <div class="tittle-menu"  onclick="irAPagina('comunidad.html')"><h3>FORO</h3></div>
+                <div class="tittle-menu"><a href="comunidad.html"><h3>FORO</h3></a></div>
             </div>
-
             <div class="item-menu">
                 <div class="icono">
-                    
                     <span class="material-symbols-outlined" id="probanndoIcono">help</span>
-                   
                 </div>
-                <div class="tittle-menu"  onclick="irAPagina('Preg_Frecuentes.html')"><h3>PREGUNTAS FRECUENTES</h3></div>
+                <div class="tittle-menu"><a href="Preg_Frecuentes.html"><h3>PREGUNTAS FRECUENTES</h3></a></div>
             </div>
             <div class="item-menu" onclick="openPopup()">
               <div class="icono">
@@ -379,7 +320,6 @@
               <div class="tittle-menu"><h3>CERRAR SESION</h3></div>
           </div>
         </div>
-    
     </div>
 
 

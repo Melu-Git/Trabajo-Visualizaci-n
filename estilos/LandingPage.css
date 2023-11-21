@@ -5,10 +5,11 @@ body {
 }
 .container_main{
     margin-bottom: 20px;
-    width: 80%;
-    display: flex;
+    width: 90%;
+    display: grid;
     height: 60vh;
     justify-content: center;
+    grid-template-columns: repeat(2,1fr);
 }
 .fondo {
     position: fixed;
@@ -137,9 +138,9 @@ footer p {
 
 
 .swiper {
-    width:90%;
-    height: 90%;
-    transform: translate(10%, -10%);
+    width:65%;
+    height: 100%;
+    transform: translate(5%, -10%);
     background-color: transparent;
 
   }
@@ -178,7 +179,7 @@ footer p {
 
 .carousel {
     width: 60%;
-    height: 500px;
+    height: 400px;
     position: relative;
     overflow: hidden;
 }
@@ -244,7 +245,7 @@ footer p {
 .swiper-slide p{
     width: 700px;
     font-size: 30px;
-    margin-left: 190px;
+    margin-left: 150px;
     font-family: 'Crimson Pro', serif;
 }
 .swiper-slide img{
@@ -266,7 +267,7 @@ footer p {
     display: block; /* Cambia a bloque para permitir el centrado vertical */
     width: 300px;
     margin-left: 25px;
-    background-color: #3B5154;
+    background-color: #57787c;
     border-radius: 10px;
     font-family: 'Crimson Pro', serif;
     font-size: 15px;
@@ -280,5 +281,5 @@ footer p {
 }
 
 .botones a:hover{
-    background-color: #57787c;
+    background-color:#4CAF50 ;
 }

@@ -12,51 +12,22 @@ body {
   h1{
     font-family: "HARRYP__.ttf";
     margin-top: 20px;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
-    font-family: "HARRYP__.ttf";
     text-shadow: 0px 0px 10px white;
 
   }
   .probar {
     background-color: #202124;
-    display: grid;
+  
     grid-template-columns: 1fr 2fr 0.8fr;
     /* border-bottom: 3px solid #28452b; */
   }
   .header1{
     text-align: center;
   }
-  .barra-busqueda {
-    padding: 10px;
-    display: flex;
-    justify-content: end;
-    margin-right: -12px;
-    margin-top: 8px;
 
-  }
-  
-  .barra-busqueda input {
-    width: 40%;
-    height: 30px;
-    border: none;
-    padding: 7px;
-    font-size: 16px;
-    border-radius: 10px;
-
-  }
-  
-  .barra-busqueda button {
-    margin-left: 5px;
-    width: 65px;
-    height: 44px;
-    background-color: #355C39;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-  }
   .header3{
     justify-content: end;
     margin-left:110px;
@@ -70,12 +41,6 @@ height: 50px;
 font-size: 35px;
 margin-right: 20px;
   }
-  h2 {
-    font-family: "HARRYP__.ttf";
-    color: white;
-    font-size: 30px;
-    letter-spacing: 2px;
-  }
   
   .caja-contenedora {
     display: grid;
@@ -84,11 +49,11 @@ margin-right: 20px;
   }
   
   .primeraParte {
-    background-color: #202124;
-    height: 100%;
-    border: 1px solid white;
+    background-color: #0E2C06;
+    height: 100vh;
     align-items: center;
     text-align: center;
+    border-right: 4px solid #28452b;
   }
   .primeraParte img{
     width:70%;
@@ -96,25 +61,38 @@ margin-right: 20px;
     
   }
   .primeraParte .imagen{
-    text-align: center;
-    justify-content: center;
-    margin-top: 40px;
+    display: flex;
+    width: 400px;
+    margin-left: 20%;
+    margin-top: 50px;
     margin-bottom: 40px;
   }
   
   .segundaParte {
-    background-color: #355c399f;
-    height: 100%;
-    border: 1px solid white;
+    background-color: #436E54;
+    height: 100vh;
   }
-  
+  .segundaParte h2{
+    color: white;
+    font-size: 90px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    letter-spacing: 2px;
+    font-family: "HARRYP__.ttf";
+    text-shadow: 0px 0px 10px rgba(0,0,0,1);
+  }
   .terceraParte {
-    background-color: #202124;
-    height: 100%;
-    align-items: center;
-    text-align: center;
+    background-color: #0E2C06;
+    border-left: 4px solid #28452b;
+    height: 100vh;
   }
-
+  .terceraParte .contenedor{
+    margin-top: 40px;
+  }
+  .terceraParte .contenedor a{
+    color: white;
+    text-decoration: none;
+  }
 
 /* ESTILOS DE LA TERCERA PARTE */
     .item-menu{
@@ -149,10 +127,10 @@ margin-right: 20px;
       color: white;
       
     }
-    .tittle-menu{
+    .tittle-menu h3{
       font-family: 'Crimson Pro', serif;
       color: white;
-      margin-left: 15px;
+      margin-left: 10px;
     }
 
    /* ESTILOS DE LA SEGUNDA PARTE */
@@ -166,14 +144,13 @@ margin-right: 20px;
   .tittle-categoria p {
     text-align: left;
     margin-left:40px;
-   
     border-radius: 10px;
-    padding: 8px;
-    width: 150px;
+    padding:8px 8px 0px 8px;
+    width: 100%;
     font-family: 'Crimson Pro', serif;
-    font-size:25px;
+    font-size:35px;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
 
   }
   .tittle-categoria2 {
@@ -197,26 +174,26 @@ margin-right: 20px;
     font-weight: 500;
     margin: 0; /* Elimina el margen predeterminado del párrafo */
   }
-  
-
   .categorias{
     display: flex;
+    justify-content: center;
   }
-
   .cursos-cards{
     display: flex;
   }
   .subCategorias button{
-    font-size: 18px;
-    padding: 10px;
     border: none;
-    border-radius: 10px; 
     width: 160px;
-    background-color: #355c3933;
+    padding: 10px;
     color: white;
-    margin-right:-15px;
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 10px; 
+    background-color: #36502988;
     font-family: 'Crimson Pro', serif;
-    margin-left: 40px;
+    box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
   }
   .subCategorias button:hover{
     color: black;
@@ -233,7 +210,7 @@ margin-right: 20px;
     margin-left: 5px;
   }
   .curso-contenedor{
-    margin-top: 40px;
+    margin-top: 30px;
     border-radius: 10px;
     width:278px;
     margin-left: 40px;
@@ -270,12 +247,9 @@ margin-right: 20px;
     color: black;
     
   }
-
-
   .curso-contenedor {
     display: block;
   }
-
   .curso-contenedor .add{
       color: white;
      border-radius: 50%;
@@ -286,7 +260,6 @@ margin-right: 20px;
     margin-top: 10px;
     padding: 3px 5px;
     }
-
   .curso-contenedor .add:hover{
     background-color: #4CAF50;
   }
@@ -302,7 +275,6 @@ margin-right: 20px;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
-
 .popup-content {
   position: absolute;
   top: 50%;
@@ -319,31 +291,27 @@ margin-right: 20px;
   justify-content: center;
   align-items: center;
   justify-items: center;
-  margin-left: 80px;
+  margin-left: 100px;
 }
-
 .popup-container p{
   font-family: "HARRYP__.ttf";
   font-size: 20px;
   text-align: center;
 }
 .popup-container .botones-cs button{
-  padding: 15px 40px;
+  padding: 15px 30px;
   border-radius: 10px;
   margin-bottom: 40px;
+  margin-left: 20px;
   background-color: transparent;
   border: 2px solid #4CAF50;
   color: #4CAF50;
   font-weight: 500;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 .popup-container .botones-cs a{
-  padding: 15px 40px;
   border-radius: 10px;
   margin-bottom: 40px;
   background-color: transparent;
-  border: 2px solid #4CAF50;
   color: #4CAF50;
   font-weight: 500;
   text-decoration: none;
@@ -367,14 +335,15 @@ margin-right: 20px;
 
 .carrousel-container{
   display: flex;
+  justify-content: center;
+  justify-items: center;
 }
-
 .carrousel-container .imagenes-carrousel  img{
-  width: 120px;
-  height: 200px;
+  width: 80px;
+  height: 130px;
 }
 .carrousel-container .imagenes-carrousel{
-  margin-right: 15px;
+  margin-right: 5px;
 }
 .carrousel-container h3{
   text-align: center;
@@ -391,17 +360,15 @@ margin-right: 20px;
   margin-left: 20px;
   margin-right: 20px;
 }
-
 .personaje-elegido {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 500px;
+  width: 60%;
+  height: 320px;
   margin-top: 20px;
-
+  margin-left: 20%;
 }
-
 .personaje-elegido img {
   max-width: 100%;
   max-height: 100%; 
@@ -438,21 +405,34 @@ margin-right: 20px;
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.671);
 }
 
+.terceraParte h1{
+  margin: 0;
+  display: flex;
+  font-size: 50px;
+  font-weight: 800;
+  margin-left: 100px;
+  text-align: center;
+  font-family: "HARRYP__.ttf";
+  text-shadow: 0px 0px 10px white; /*izq/der ,arriba/abajo, densidad */
+}
 #reciente{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px; /* Espacio entre columnas */
   max-width: 920px;
-  background-color: #355c3933;
+  background-color: #28452b;
   border-radius: 10px;
-  margin-left: 40px;
-  margin-top: 80px;
+  margin-left: 45px;
+  margin-top: 25px;
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7);
+-webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.7);
 }
-
 .ordenar{
   margin-top: 10px;
   margin-left:140px;
   color: white;
+<<<<<<< HEAD
 }
 
 .ordenar select{
@@ -474,3 +454,7 @@ margin-right: 20px;
 #ordenarBtn:hover{
   background-color: #4CAF50;
 }
+=======
+  font-family: 'Crimson Pro', serif;
+}
+>>>>>>> 4dd023d95e00669044fb72ad6a8339eb8a52b4ef

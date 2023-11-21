@@ -26,7 +26,32 @@
 </style>
 </head>
 <body>
+    
     <main>
+          <!-- Agrega este código dentro del body de tu HTML -->
+<div id="popupContainer" class="popup-container">
+    <div class="popup-content">
+        <img src="imagenes/PP_1.png" controls loop></video>
+        <p>ESTAS SEGURO QUE QUIERES IRTE?</p>
+        <div class="botones-cs">
+          <button id="cerrarsesion" style="margin-left:80px;"><a href="LandingPage.html">CERRAR SESION</a></button>
+          <button onclick="closePopup()" id="cerrarpopu">CANCELAR</button>
+        </div>
+    </div>
+  </div>
+
+  <!-- Agrega este código dentro del body de tu HTML -->
+<div id="popupContainer2" class="popup-container2">
+    <div class="popup-content2">
+        <img src="imagenes/PP_2.png" controls loop></video>
+        <p>¡YA ESTAS INSCRIPTO!</p>
+        <div class="botones-cs">
+          <button id="cerrarsesion"><a href="0index.html">VOLVER</a></button>
+          <button onclick="closePopup()" id="cerrarpopu">X</button>
+        </div>
+    </div>
+  </div>
+  
         <section class="dos-partes">
         <div class="contenedor-curso">
           <h2>CURSO DE Growth Marketing</h2>
@@ -41,7 +66,7 @@
                 </span>
                 <p>Duración: 4 semanas</p>
           </div>
-          <button id="incribirse">INSCRIBIME AHORA</button>
+          <button id="incribirse" onclick="openPopup2()">INSCRIBIME AHORA</button>
           <h3>SOBRE EL CURSO</h3>
           <div class="capitulos">
             <div class="accordion">
@@ -276,70 +301,52 @@
 
 
         <div class="terceraParte">
-            <h1>Menu Principal</h1>
-              <div class="contenedor">
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">home</span>
-      
-                      </div>
-                      <div class="tittle-menu"  onclick="irAPagina('0index.html')"><h3>INICIO</h3></div>
+            <div class="contenedor">
+              <h1>Menu Principal</h1>
+                <div class="item-menu">
+                  <div class="icono">
+                      <span class="material-symbols-outlined" id="probanndoIcono">home</span>
                   </div>
-      
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
-      
-                      </div>
-                      <div class="tittle-menu"  onclick="irAPagina('notificaciones.html')"><h3>NOTIFICACIONES</h3></div>
-                  </div>
-      
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">auto_stories</span>
-      
-                      </div>
-                      <div class="tittle-menu"><h3>PROGRESO</h3></div>
-                  </div>
-      
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">personal_bag</span>
-      
-                      </div>
-                      <div class="tittle-menu"><h3>MIS CURSOS</h3></div>
-                  </div>
-      
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
-      
-                      </div>
-                      <div class="tittle-menu"  onclick="irAPagina('comunidad.html')"><h3>FORO</h3></div>
-                  </div>
-      
-                  <div class="item-menu">
-                      <div class="icono">
-                          
-                          <span class="material-symbols-outlined" id="probanndoIcono">help</span>
-                         
-                      </div>
-                      <div class="tittle-menu"  onclick="irAPagina('Preg_Frecuentes.html')"><h3>PREGUNTAS FRECUENTES</h3></div>
-                  </div>
-                  <div class="item-menu" onclick="openPopup()">
-                    <div class="icono">
-                        <span class="material-symbols-outlined" id="probanndoIcono">logout</span>
-                    </div>
-                    <div class="tittle-menu"><h3>CERRAR SESION</h3></div>
+                  <div class="tittle-menu"><a href="0index.html"><h3>INICIO</h3></a></div>
                 </div>
+                <div class="item-menu">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">person</span>
+                    </div>
+                    <div class="tittle-menu"><a href="0perfil.html"><h3>PERFIL</h3></a></div>
+                </div>
+                <div class="item-menu">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">notifications</span>
+                    </div>
+                    <div class="tittle-menu"><a href="notificaciones2.html"><h3>NOTIFICACIONES</h3></a></div>
+                </div>
+                <div class="item-menu">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">personal_bag</span>
+                    </div>
+                    <div class="tittle-menu"><a href=""><h3>MIS CURSOS</h3></a></div>
+                </div>
+                <div class="item-menu">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">groups</span>
+                    </div>
+                    <div class="tittle-menu"><a href="comunidad.html"><h3>FORO</h3></a></div>
+                </div>
+                <div class="item-menu">
+                    <div class="icono">
+                        <span class="material-symbols-outlined" id="probanndoIcono">help</span>
+                    </div>
+                    <div class="tittle-menu"><a href="Preg_Frecuentes.html"><h3>PREGUNTAS FRECUENTES</h3></a></div>
+                </div>
+                <div class="item-menu" onclick="openPopup()">
+                  <div class="icono">
+                      <span class="material-symbols-outlined" id="probanndoIcono">logout</span>
+                  </div>
+                  <div class="tittle-menu"><h3>CERRAR SESION</h3></div>
               </div>
-          
-          </div>
+            </div>
+        </div>
        </section>
     </main>
     <script>
@@ -351,5 +358,6 @@
             });
         });
     </script>
+    <script src="Javascript/index.js"></script>
 </body>
 </html>

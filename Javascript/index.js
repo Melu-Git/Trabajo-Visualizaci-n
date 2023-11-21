@@ -27,6 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function openPopup2() {
+    const popup = document.getElementById('popupContainer2');
+    popup.style.display = 'block';
+}
+
+function closePopup() {
+    const popup = document.getElementById('popupContainer2');
+    popup.style.display = 'none';
+}
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const botonCambiar = document.querySelector("#botonCambiar button");
   

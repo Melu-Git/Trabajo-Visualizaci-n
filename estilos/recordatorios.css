@@ -97,7 +97,7 @@ h2{
  }
 
  #ProgressSteps img{
-  height: 60px;
+  height: 50px;
   padding-bottom: 8px;
  
  }.steps .active{
@@ -115,21 +115,20 @@ h2{
 #ProgressSteps .steps.active .inactive-img {
   display: none;
 }
-  /* FIN ESTILOS DE LA BARRA DE PASOS */
+
+/* FIN ESTILOS DE LA BARRA DE PASOS */
  
 /* info  */
 
 .caja-contenedora{
   position: relative;
   top: 50%;
-  left: 50%;
-background-color: #1b2033;
-opacity: 0.9;
+  background-color: #355c39;
   width: 660px;
   height:355px;
-margin-left: -130px;
-border-radius: 10px;
-margin-bottom: 500px;
+  margin-left: -95px;
+  border-radius: 10px;
+  margin-bottom: 500px;
 }
 
 
@@ -170,7 +169,7 @@ select {
 }
 
 .selector-container li.selected {
-  background-color: #3B5154;
+  background-color: #4CAF50;
   color: white;
 }
 
@@ -179,9 +178,8 @@ main {
   text-align: center;
 }
 
-.imagen-fondo {
-  width: 400px;
-  height: 400px;
+.imagen-fondo { /*IMAGEN CAJA*/
+  width: 250px;
   height: auto;
   display: block;
 }
@@ -193,24 +191,19 @@ main {
 
 .superpuesta {
   position: absolute;
-  top: 111%;
+  top: 100%;
   left: 85%;
   transform: translate(-50%, -8%);
   border: 1px solid rgb(180, 178, 178);
   box-shadow: 5px 5px 5px rgba(133, 133, 133, 0.5);
   border-radius: 10px;
   text-align: left;
-  
 }
-
 
 .superpuesta select{
   margin-left:40px;
 }
-
-
 main {
-
   width: 80%;
   margin: 0 auto;
   /* Resto de estilos para el main */
@@ -219,10 +212,10 @@ main {
 .boton-fuera-main {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 800%);
+  transform: translate(-50%, 700%);
   width: 400px;
   height: 50px;
-  background-color: #3B5154;
+  background-color: #436E54;
   border-radius: 10px;
   font-family: 'Crimson Pro', serif;
   font-size:15px;
@@ -234,21 +227,13 @@ main {
 }
 
 .boton-fuera-main:hover{
-  background-color: #57787c;
+  background-color: #4CAF50;
 }
 
-.espacio{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 980%);
-  width: 400px;
-  height: 50px;
 
-  
-}
 
 #contenido{
-  margin-top: 27px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
