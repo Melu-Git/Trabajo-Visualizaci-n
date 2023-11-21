@@ -21,3 +21,25 @@ function ordenarItems() {
         contenedor.appendChild(item);
     });
 }
+
+
+
+// ACORDEON
+document.addEventListener("DOMContentLoaded", function() {
+    const accordionItems = document.querySelectorAll(".contentBx");
+
+    accordionItems.forEach(item => {
+        const label = item.querySelector(".label");
+
+        label.addEventListener("click", function() {
+            item.classList.toggle("active");
+
+            // Cerrar otros elementos del acordeón
+            accordionItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains("active")) {
+                    otherItem.classList.remove("active");
+                }
+            });
+        });
+    });
+});

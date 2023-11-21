@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+ 
+
+  }
+  
+
+  @font-face {
+    font-family: "HARRYP__.ttf";
+    src: url("HARRYP__.ttf.TTF");
+  }
+
+
+.dos-partes {
+    display: grid;
+    grid-template-columns: 3fr 0.8fr; /* Dos columnas, la primera ocupa 1 fracción y la segunda 2 fracciones */
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+
+h1{
+    font-family: "HARRYP__.ttf";
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    font-family: "HARRYP__.ttf";
+    text-shadow: 0px 0px 10px white;
+
+  }
+  
+
+
+/* ESTILOS DE LA TERCERA PARTE */
+.item-menu{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid white;
+    width: 80%;
+    margin-left: 40px;
+    background-color: #4CAF50;
+    margin-top: 20px;
+  }
+
+  .item-menu:hover{
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #355C39;
+  }
+
+  #probanndoIcono{
+    padding: 10px ;
+    border-radius: 50%;
+    background-color:#355C39 ;
+    border: 1px solid #1c311e;
+    color: white;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+
+  .item-menu:hover #probanndoIcono{
+    background-color:#4CAF50 ;
+    border: 1px solid white;
+    color: white;
+    
+  }
+  .tittle-menu{
+    font-family: 'Crimson Pro', serif;
+    color: white;
+    margin-left: 15px;
+  }
+  .terceraParte{
+    background-color: #202124;
+  }
+
+/* ESTILOS PRIMERA PARTE */
+  .contenedor-curso h2{
+    font-family: "HARRYP__.ttf";
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 65px;
+  }
+  .contenedor-curso h3{
+    font-family: "HARRYP__.ttf";
+margin-top:90px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 45px;
+  }
+  .contenedor-curso{
+    letter-spacing: 2px;
+    padding-top: 70px;
+    padding-left: 50px;
+  }
+
+  .contenedor-curso li{
+    color: white;
+    font-family: 'Crimson Pro', serif;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  .contenedor-curso #incribirse{
+    font-family: 'Crimson Pro', serif;
+    color: white;
+    margin-top: 40px;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    margin-left: 22px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px
+  }
+
+  .contenedor-curso #incribirse:hover{
+ background-color: #355C39;
+ box-shadow: 5px 5px 10px #76dd79;
+  }
+
+    /* PROBANDO CAJA DE CONTENIDO*/
+    .accordion { 
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        min-height: 25vh;
+        max-width: 800px;
+    }
+    .accordion .contentBx {
+        position: relative;
+        margin: 10px 20px;
+    }
+    .accordion .contentBx .label {
+        position: relative;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: 'Crimson Pro', serif;
+        font-weight: 600;
+        background-color: #355C39;
+        color: white;
+        cursor: pointer;
+    }
+    .accordion .contentBx .label::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+    .accordion .contentBx .contenido {
+        position: relative;
+        background: black;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        overflow-y: auto;
+    }
+    .accordion .contentBx.active .label::before {
+        content: '-';
+    }
+    .accordion .contentBx.active .contenido {
+        height: 120px;
+        padding: 10px;
+    }
+
+    /*CLASES*/
+.caja-contenidos2, .caja-contenidos3, #cotenido1{
+margin-bottom: 10px;
+}
+.conteiner-clasuno,
+.conteiner-clasedos{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 0;
+border-top: 1px solid white;
+
+}
+.titulo-introduccion,
+.titulo-claseuno,
+.titulo-clasedos{
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding-bottom: 30px;
+}
+
+.duration-content{
+display: flex;
+flex-direction: column;
+margin-left: 250px;
+font-size: 13px;
+color: white;
+
+}
+
+.name-content{
+display: flex;
+flex-direction: column;
+font-size: 13px;
+color: white;
+line-height: 22px;
+margin-top: 2px;
+margin-left: 8px;
+}
+
+.caja-contenidos1{
+    display: flex;
+    align-items: center;
+    background-color: black;
+
+}
+
+.caja-contenidos2{
+    display: flex;
+    border-top: 1px solid white;
+    align-items: center;
+    background-color: black;
+    padding-top: 10px;
+}
+.caja-contenidos3{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    background-color:black;
+   padding-top: 10px;
+ }
+
+.seccion-1-p2{
+     padding-right: 280px;
+ }
+.material-symbols-outlined{
+color: white;
+}
+
+.duracion-curso {
+    display: flex;
+    background-color: #ffffff77;
+    width: 420px;
+    margin-left: 20px;
+    border-radius: 10px;
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+}
+
+.duracion-curso p {
+    color: white;
+    margin-left: 10px;
+}
+
+/* Añadido: Estilo para el icono */
+.duracion-curso .material-symbols-outlined {
+    color: white;
+    font-size: 22px; /* Tamaño del icono (ajustar según sea necesario) */
+    margin-left: 10px; /* Ajuste del margen */
+}

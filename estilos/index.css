@@ -443,7 +443,7 @@ margin-right: 20px;
   grid-template-columns: repeat(2, 1fr);
   gap: 60px; /* Espacio entre columnas */
   max-width: 920px;
-  background-color: #2B324F;
+  background-color: #355c3933;
   border-radius: 10px;
   margin-left: 40px;
   margin-top: 80px;
@@ -453,4 +453,24 @@ margin-right: 20px;
   margin-top: 10px;
   margin-left:140px;
   color: white;
+}
+
+.ordenar select{
+  border-radius: 10px;
+  width: 100px;
+  padding:3px
+}
+
+#ordenarBtn {
+  border-radius: 10px;
+  border: none;
+  padding:  3px 15px;
+  color: white;
+  background-color: #1c311e;
+  box-shadow:3px 3px 3px rgba(255, 255, 255, 0.671);
+
+}
+
+#ordenarBtn:hover{
+  background-color: #4CAF50;
 }
