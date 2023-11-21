@@ -20,7 +20,7 @@ body {
   }
   .probar {
     background-color: #202124;
-    display: grid;
+  
     grid-template-columns: 1fr 2fr 0.8fr;
     /* border-bottom: 3px solid #28452b; */
   }
@@ -332,9 +332,7 @@ margin-right: 20px;
   background-color: #4CAF50;
   color: white;
 }
-.popup-container #cerrarsesion a:hover{
-  color: white;
-}
+
 .carrousel-container{
   display: flex;
   justify-content: center;
@@ -434,5 +432,29 @@ margin-right: 20px;
   margin-top: 10px;
   margin-left:140px;
   color: white;
+<<<<<<< HEAD
+}
+
+.ordenar select{
+  border-radius: 10px;
+  width: 100px;
+  padding:3px
+}
+
+#ordenarBtn {
+  border-radius: 10px;
+  border: none;
+  padding:  3px 15px;
+  color: white;
+  background-color: #1c311e;
+  box-shadow:3px 3px 3px rgba(255, 255, 255, 0.671);
+
+}
+
+#ordenarBtn:hover{
+  background-color: #4CAF50;
+}
+=======
   font-family: 'Crimson Pro', serif;
 }
+>>>>>>> 4dd023d95e00669044fb72ad6a8339eb8a52b4ef
