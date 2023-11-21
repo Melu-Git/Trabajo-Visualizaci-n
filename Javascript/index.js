@@ -32,7 +32,7 @@ function openPopup2() {
     popup.style.display = 'block';
 }
 
-function closePopup() {
+function closePopup2() {
     const popup = document.getElementById('popupContainer2');
     popup.style.display = 'none';
 }
