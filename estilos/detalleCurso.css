@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
- 
+ background-color: #1c311e;
 
   }
   
@@ -75,10 +75,7 @@ h1{
     color: white;
     margin-left: 15px;
   }
-  .terceraParte{
-    background-color: #202124;
-  }
-
+  
 /* ESTILOS PRIMERA PARTE */
   .contenedor-curso h2{
     font-family: "HARRYP__.ttf";
